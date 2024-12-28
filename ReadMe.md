@@ -12,6 +12,7 @@ This is an AI chatbot that user can interact and have a basic conversation with.
 2. Perhaps train bot for specific purpose? (mental health?)
 3. Create json file to contain intents and responses that ai bot can extract from.
 4. Style user interface (background, chat like features, icons, etc)
+5. Learn about Restful APIs
 
 # Resources 
 Tutorial for AI chatbot speech = https://www.smashingmagazine.com/2017/08/ai-chatbot-web-speech-api-node-js/ 
