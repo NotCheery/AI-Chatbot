@@ -1,0 +1,27 @@
+<!-- User Interface -->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Voice Chat</title>
+        <!-- Seems to not link correctly -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1>AI Voice Chat</h1>
+
+        <div id="chatbox">
+            <input type="text" id="userInput" placeholder="Type your message . . ."/>
+            <button id="send">Send</button>
+        </div>
+        
+        <div id="response"></div>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
