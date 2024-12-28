@@ -28,8 +28,19 @@ io.on('connection', (socket) => {
         client.message(text, {})  
             .then((response) => {
                 console.log(response); //Check response in terminal
-                let intent = response.traits?.['wit$greetings']?.[0]?.value;
-                let aiText = intent ? "Hello! How can I help you?": "I did not understand that.";
+                
+                let aiText = "I did not understand that.";
+
+                // Extract intent from response
+                const intent = response.entities.intent?.[0]?.value;  
+                const greeting = response.entities.wit_greeting?.[0]?.value;
+                
+                // Check for intent and return a custom response
+
+                    if (intent == "greeting" || greeting)  {
+                        aiText = "Hi there! How can I help you?";
+                    }
+                        
                 socket.emit('bot reply', aiText);
             })
             .catch((err) => {
