@@ -7,12 +7,15 @@ This is an AI chatbot that user can interact and have a basic conversation with.
 2. Installed express
 2. Use natural language processing service tool, Wit.ai to build AI chatbot by installing node-wit
 
-# To dos
+# Must To dos
 1. Train wit.ai chatbot for better communication. (Create more intents)
 2. Perhaps train bot for specific purpose? (mental health?)
 3. Create json file to contain intents and responses that ai bot can extract from.
-4. Style user interface (background, chat like features, icons, etc) -> Make it pleasant
 5. Learn about Restful APIs
+
+# Extra To dos 
+1. Speech to text for user: User speaks in mic and its converted to text sent as message to bot.
+2. Style user interface (background color, chat like features, icons, etc) -> Make it pleasant.
 
 # Resources 
 Tutorial for AI chatbot speech = https://www.smashingmagazine.com/2017/08/ai-chatbot-web-speech-api-node-js/ 
